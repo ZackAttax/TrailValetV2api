@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  issue: MyText
+  fixed: false
+  trail: one
+
+two:
+  location: MyString
+  issue: MyText
+  fixed: false
+  trail: two
