@@ -19,12 +19,19 @@ class Api::V1::TrailsController < ApplicationController
 
   # POST /trails
   def create
+    #byebug
     @trail = Trail.new(trail_params)
 
     if @trail.save
-      render json: @trail, status: :created, location: @trail
+      render json: {
+        status: "found",
+        trail: @trail
+      }, status: :created, location: api_v1_trail_path(@trail)
     else
-      render json: @trail.errors, status: :unprocessable_entity
+      render json: {
+        Status: "lost...",
+        error: @trail.errors.full_messages.join(", ")
+       }, status: :unprocessable_entity
     end
   end
 
