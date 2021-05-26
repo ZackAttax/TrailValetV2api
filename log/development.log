@@ -3123,3 +3123,529 @@ Processing by Api::V1::TrailsController#index as */*
 Completed 200 OK in 348ms (Views: 317.0ms | ActiveRecord: 22.2ms | Allocations: 2828297)
 
 
+Started GET "/api/v1/trails" for ::1 at 2021-05-25 18:56:23 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (1.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (5.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 351ms (Views: 344.0ms | ActiveRecord: 25.7ms | Allocations: 3036182)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:01:43 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (5.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 631ms (Views: 595.9ms | ActiveRecord: 15.9ms | Allocations: 5528115)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:02:14 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (5.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 270ms (Views: 253.9ms | ActiveRecord: 13.9ms | Allocations: 2849095)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:03:15 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (5.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.3ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 290ms (Views: 265.7ms | ActiveRecord: 17.8ms | Allocations: 2848211)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:04:56 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.6ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 286ms (Views: 266.8ms | ActiveRecord: 11.4ms | Allocations: 2848211)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:05:51 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 292ms (Views: 274.4ms | ActiveRecord: 13.6ms | Allocations: 2848211)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:05:55 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 286ms (Views: 268.3ms | ActiveRecord: 10.2ms | Allocations: 2848211)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:06:28 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 283ms (Views: 259.7ms | ActiveRecord: 13.5ms | Allocations: 2851134)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:07:00 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (4.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (5.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.3ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 299ms (Views: 278.5ms | ActiveRecord: 18.4ms | Allocations: 2848211)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 07:10:16 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (3.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 629ms (Views: 590.2ms | ActiveRecord: 52.6ms | Allocations: 6113135)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:18:39 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (7.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 285ms (Views: 280.2ms | ActiveRecord: 26.6ms | Allocations: 3066053)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:29:23 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (5.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.3ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 350ms (Views: 341.1ms | ActiveRecord: 17.0ms | Allocations: 3066053)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:29:37 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 296ms (Views: 280.2ms | ActiveRecord: 7.8ms | Allocations: 2858168)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:34:15 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (4.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 262ms (Views: 240.9ms | ActiveRecord: 14.3ms | Allocations: 2858168)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:35:42 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 259ms (Views: 246.8ms | ActiveRecord: 9.8ms | Allocations: 2861091)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:36:00 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (6.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 271ms (Views: 247.3ms | ActiveRecord: 16.3ms | Allocations: 2858932)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:39:00 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 242ms (Views: 229.8ms | ActiveRecord: 9.8ms | Allocations: 2858168)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:40:22 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 260ms (Views: 250.4ms | ActiveRecord: 6.8ms | Allocations: 2858168)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:51:26 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (2.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 326ms (Views: 315.2ms | ActiveRecord: 20.9ms | Allocations: 3066921)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:51:46 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (4.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.6ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.3ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 272ms (Views: 246.1ms | ActiveRecord: 19.1ms | Allocations: 2859039)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:52:57 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (4.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 268ms (Views: 250.2ms | ActiveRecord: 10.9ms | Allocations: 2858168)
+
+
+Started GET "/valet/1" for ::1 at 2021-05-26 09:53:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/valet/1"):
+  
+Started GET "/valet/1" for ::1 at 2021-05-26 09:54:05 -0400
+  
+SyntaxError (/Users/zackwilliams/Development/code/phase4/trail_valet_v2/config/routes.rb:2: syntax error, unexpected [, expecting do or '{' or '('
+  resources :valets, only [:create, :update]
+                          ^):
+  
+config/routes.rb:2: syntax error, unexpected [, expecting do or '{' or '('
+config/routes.rb:2: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/valet/1" for ::1 at 2021-05-26 09:54:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/valet/1"):
+  
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:56:43 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (5.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.8ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 601ms (Views: 563.8ms | ActiveRecord: 39.8ms | Allocations: 6112982)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 09:58:15 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (5.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 292ms (Views: 265.7ms | ActiveRecord: 20.1ms | Allocations: 2858896)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 10:18:30 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mTrail Load (5.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (3.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 333ms (Views: 328.2ms | ActiveRecord: 25.2ms | Allocations: 3066053)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 10:18:44 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (1.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.0ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (0.9ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (4.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 334ms (Views: 313.0ms | ActiveRecord: 10.6ms | Allocations: 2858168)
+
+
+Started GET "/api/v1/trails" for ::1 at 2021-05-26 10:21:22 -0400
+Processing by Api::V1::TrailsController#index as */*
+  [1m[36mTrail Load (2.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.5ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 4]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.3ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 5]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (62.4ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 6]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.1ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 7]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (2.7ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 9]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+  [1m[36mValet Load (1.2ms)[0m  [1m[34mSELECT "valets".* FROM "valets" WHERE "valets"."trail_id" = ?[0m  [["trail_id", 10]]
+  ↳ app/controllers/api/v1/trails_controller.rb:8:in `index'
+Completed 200 OK in 645ms (Views: 560.7ms | ActiveRecord: 73.5ms | Allocations: 2861091)
+
+

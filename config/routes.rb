@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # resources :valets
+  resources :valets, only: [:create, :update]
   namespace :api do
     namespace :v1 do
       resources :trails, only: [:index, :create, :show]

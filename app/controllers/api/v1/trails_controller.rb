@@ -5,9 +5,9 @@ class Api::V1::TrailsController < ApplicationController
   def index
     trails = Trail.all
 
-    render json: trails, except: [:created_at, :updated_at, :id], include: {
+    render json: trails, except: [:created_at, :updated_at], include: {
       valets: {
-        except: [:trail_id, :id]
+        except: [:trail_id]
       }
     }
   end
