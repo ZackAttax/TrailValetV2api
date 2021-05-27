@@ -5,11 +5,7 @@ class Api::V1::TrailsController < ApplicationController
   def index
     trails = Trail.all
 
-    render json: trails, except: [:created_at, :updated_at], include: {
-      valets: {
-        except: [:trail_id]
-      }
-    }
+    render json: trails, except: [:created_at, :updated_at], include: :valets
   end
 
   # GET /trails/1
@@ -19,13 +15,13 @@ class Api::V1::TrailsController < ApplicationController
 
   # POST /trails
   def create
-    #byebug
+    
     @trail = Trail.new(trail_params)
 
     if @trail.save
       render json: {
         status: "found",
-        trail: @trail
+        trail: @trail, except: [:created_at, :updated_at]
       }, status: :created, location: api_v1_trail_path(@trail)
     else
       render json: {
@@ -57,7 +53,7 @@ class Api::V1::TrailsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def trail_params
-      params.require(:trail).permit(:name, :location)
+      params.require(:trail).permit(:name)
     end
 
 end

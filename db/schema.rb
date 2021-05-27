@@ -10,11 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_21_133951) do
+ActiveRecord::Schema.define(version: 2021_05_27_132223) do
 
   create_table "trails", force: :cascade do |t|
     t.string "name"
-    t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

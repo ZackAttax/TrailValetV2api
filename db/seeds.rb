@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-sykes_mt = Trail.create(name: "Moon Tower", location: "Sykes Park")
-southside_grn = Trail.create(name: "Green Trail", location: "Southside Park")
-sope = Trail.create(name: "Sope Creek", location: "Sope Creek")
+sykes_mt = Trail.create(name: "Moon Tower")
+southside_grn = Trail.create(name: "Green Trail")
+sope = Trail.create(name: "Sope Creek")
 
 log_at_sykes = Valet.create(location: "Mile marker 1", trail_id: sykes_mt.id, issue: "Log on trail")
 mud_ss = Valet.create(location: "Mile marker 3", trail_id: southside_grn.id, issue: "Holding water")

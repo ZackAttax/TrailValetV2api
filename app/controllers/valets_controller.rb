@@ -18,20 +18,29 @@ class ValetsController < ApplicationController
     @valet = Valet.new(valet_params)
 
     if @valet.save
-      render json: @valet, status: :created, location: @valet
+      render json: {
+        status: "found",
+        valet: @valet
+         }, status: :created
     else
       render json: @valet.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /valets/1
-  def update
-    if @valet.update(valet_params)
-      render json: @valet
-    else
-      render json: @valet.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   if @valet.update(valet_params)
+  #     render json: {
+  #       status: 200,
+  #       valet: @valet
+  #   }
+  #   else
+  #     render json: {
+  #       status: 400,
+  #       @valet.errors
+  #     }, status: :unprocessable_entity
+  #   end
+  # end
 
   # DELETE /valets/1
   def destroy
