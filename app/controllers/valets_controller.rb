@@ -21,14 +21,15 @@ class ValetsController < ApplicationController
       render json: {
         status: "found",
         valet: @valet
-         }, status: :created
+      }, status: :created
     else
       render json: @valet.errors, status: :unprocessable_entity
     end
   end
 
-  # PATCH/PUT /valets/1
+  #PATCH/PUT /valets/1
   # def update
+  #   byebug
   #   if @valet.update(valet_params)
   #     render json: {
   #       status: 200,
@@ -41,11 +42,24 @@ class ValetsController < ApplicationController
   #     }, status: :unprocessable_entity
   #   end
   # end
+  def update
+      if @valet.update(valet_params)
+       render json: {
+        status:200,
+         valet: @valet
+       }
+    else
+      render json: {
+        status: 400,
+        valet: @valet.errors.full_messages.join(", ")
+      }
+     end
+   end
 
   # DELETE /valets/1
-  def destroy
-    @valet.destroy
-  end
+  # def destroy
+  #   @valet.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
